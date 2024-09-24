@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap');
+
+:root{
+    --dark: #2C3333;
+    --ls-dark: #ffffff07;
+    --mid: #2E4F4F;
+    --light: #0E8388;
+    --x-light: #CBE4DE;
+    --shdow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    --shdow-hover: 0px 15px 20px rgba(0, 0, 0, 0.15);
+
+}
+body{
+    background-color: var(--dark);
+    color: var(--x-light);
+    padding: 15px;
+    font-family: "Poppins";
+    font-size: 40px;
+    text-align: center;
+}
+
+/* HERO */
+
+.hero, .skillsCard{
+    padding: 15px;
+    border-radius: 20px;
+    background-color: var(--ls-dark);
+    text-align: center;
+    box-shadow: var(--shdow);
+    /* width: fit-content; */
+}
+.persoImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: var(--light) solid 4px;
+    box-shadow: var(--shdow);
+}
+.fullName{
+        font-weight: bold;
+        color: var(--light);
+}
+.occupation{
+    font-size: 20px;
+    display: inline;
+}
+.smallerCLine{
+    font-size: 20px;
+}
+.moreBtn{
+    background-color: var(--mid);
+    border-radius: 40px;
+    padding: 15px 50px;
+    font-family: "Poppins";
+    font-size: 20px;
+    border: none;
+    color: var(--x-light);
+    box-shadow: var(--shdow);
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    margin: 20px;
+}
+.moreBtn:hover{
+    box-shadow: var(--shdow-hover);
+    color: #cbe4de90;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+/* About Me Section */
+
+.aboutMe{
+    user-select: none;
+}
+.aboutMeContent{
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+}
+
+/* IDE  */
+.ide{
+    background-color: var(--dark);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: var(--shdow-hover);
+}
+.ideHeader{
+    font-size: 20px;
+    text-align: left;
+    border-bottom: #2E4F4F solid 2px;
+    width: max-content;
+}
+.ideHeader img{
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    margin-bottom: -2px;
+}
+.ideHeader .x{
+    opacity: 80%;
+    cursor: pointer;
+    padding: 1px 10px;
+    background-color: #ffffff09;
+    border-radius: 5px;
+}
+.ideHeader .x:hover{
+    opacity: 100%;
+    background-color: #ffffff2b;
+}
+.aboutMeContent .num{
+    opacity: 40%;
+}
+/* SKILLS */
+.skillsCard{
+    margin-top: 30px;
+}
+.skillsCard .title, .langCard .title{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 200px;
+    background-color: var(--ls-dark);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: var(--shdow);
+    margin: 15px;
+}
+.card:hover{
+    box-shadow: var(--shdow-hover);
+}
+.skillTitle, .langTitle{
+    font-size: 25px;
+    color: var(--light);
+    font-weight: bold;
+    padding: 15px;
+}
+
+.icon{
+    width: 80px;
+    height: 80px;
+}
