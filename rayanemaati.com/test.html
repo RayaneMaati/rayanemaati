@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <div>
+        <div class="title" style="display: inline;"></div>
+        <span class="cursorLine" style="display: inline;">|</span>
+    </div>
+
+    <script>
+        let title = document.querySelector(".title");
+        let cLine = document.querySelector(".cursorLine");
+
+        const content = "I'm" + '\xa0' + "Rayane";
+        let count = 0;
+
+        let toggleLine = () =>{
+            let state = true;
+            setInterval(() =>{
+
+                if(state){
+                    cLine.style.display = "none";
+                    state = false;
+                }else{
+                    cLine.style.display = "inline";
+                    state = true;
+                }
+
+            }, 200);
+        };
+
+        for (let i = 0; i < content.length; i++) {
+            setTimeout(() => {
+                title.innerText += content[i];
+            }, i * 200);
+        }
+        console.log(title.innerText);
+
+        toggleLine();
+
+        setInterval(()=>{
+            if(title.innerText == content){
+                console.log("Doone");
+            }
+        }, 200)
+    </script>
+</body>
+</html>
