@@ -42,3 +42,10 @@ let writingAnim = (target, content)=> {
 writingAnim(fName, content);
 writingAnim(occupation, occupationContent);
 toggleLine();
+
+// const me = {
+//     name: "Rayane Maati",
+//     occupation: "Software Enginnering Student",
+//     hobby: "Programming",
+//     age: "n/a"
+// }
