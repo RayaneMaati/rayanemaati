@@ -7,20 +7,21 @@
     <link href="main.css" rel="stylesheet">
 </head>
 <body>
+
     <div class="hero">
         <img class="persoImg" src="imgs/persoImg.jpg">
 
         <div class="heroTitle">
-            Hi! I'm <span class="fullName"></span><span class="cursorLine"> | </span>
+            Hi! I'm <span class="fullName">Rayane Maati</span>
         </div>
 
         <div>
-            <div class="occupation"></div><span class="cursorLine smallerCLine"> | </span>
+            <div class="occupation"></div><span style="font-size: 20px;" class="cursorLine"> | </span>
         </div>
-        <button class="moreBtn">KNOW ME BETTER !</button>
+        <a href="#aboutMe"><button class="moreBtn">KNOW ME BETTER !</button></a>
     </div>
 
-    <div class="skillsCard aboutMe">
+    <div class="skillsCard aboutMe" id="aboutMe">
         <div class="title">Who I am ?</div>
 
         <div class="ide">
@@ -39,7 +40,7 @@
     </div>
 
     <div class="skillsCard">
-        <div class="title">print(mySkills);</div>
+        <div class="title">print(mySkills)</div>
         <div class="cards">
             <div class="card">
                 <div class="skillTitle">Problem Solving</div>
@@ -59,7 +60,7 @@
     </div>
 
     <div class="langCard skillsCard">
-        <div class="title">return(myProgrammingLanguages[]);</div>
+        <div class="title">return(ProgLang[])</div>
         <div class="cards">
             <div class="card">
                 <div class="langTitle" style="color: var(--x-light)">Python</div>
@@ -98,6 +99,8 @@
 
         </div>
     </div>
+
+    <button class="topBtn" onclick="goUp()"><img src="icons/up.svg"/></button>
 
     <script src="script.js"></script>
 </body>

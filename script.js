@@ -1,9 +1,7 @@
 console.log("Running...");
-let fName = document.querySelector(".fullName");
 let occupation = document.querySelector(".occupation");
 let cLine = document.querySelector(".cursorLine");
 
-const content = "Rayane" + '\xa0' + "Maati";
 const occupationContent = "Software" + '\xa0' + "Engineering" + '\xa0' + "student" + '\xa0' + "@" + '\xa0' + "uOttawa";
 let count = 0;
 
@@ -19,14 +17,14 @@ let toggleLine = () =>{
             state = true;
         }
 
-        if(fName.innerText == content){
+        if(occupation.innerText == occupationContent){
             cLine.style.display = "none";
             clearInterval(toggleInterval);
         }
 
     }, 400);
 
-    if(fName.innerText == content){
+    if(occupation.innerText == occupationContent){
         clearInterval(toggleInterval);
     }
 };
@@ -39,7 +37,10 @@ let writingAnim = (target, content)=> {
     }
 };
 
-writingAnim(fName, content);
+function goUp(){
+    window.scrollTo(0,0);
+}
+
 writingAnim(occupation, occupationContent);
 toggleLine();
 
