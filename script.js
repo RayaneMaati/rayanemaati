@@ -1,9 +1,12 @@
-console.log("Running...");
+console.log("Hi! What are you doing Here ? :)");
 let occupation = document.querySelector(".occupation");
 let cLine = document.querySelector(".cursorLine");
 
-const occupationContent = "Software" + '\xa0' + "Engineering" + '\xa0' + "student" + '\xa0' + "@" + '\xa0' + "uOttawa";
+occupation.innerText = "";
+
+const occupationContent = "Software Engineering student @ uOttawa";
 let count = 0;
+
 
 let toggleLine = () =>{
     let state = true;
@@ -32,7 +35,7 @@ let toggleLine = () =>{
 let writingAnim = (target, content)=> {
     for (let i = 0; i < content.length; i++) {
         setTimeout(() => {
-            target.innerText += content[i];
+            target.innerHTML += content[i];
         }, i * 100);
     }
 };
@@ -43,10 +46,3 @@ function goUp(){
 
 writingAnim(occupation, occupationContent);
 toggleLine();
-
-// const me = {
-//     name: "Rayane Maati",
-//     occupation: "Software Enginnering Student",
-//     hobby: "Programming",
-//     age: "n/a"
-// }

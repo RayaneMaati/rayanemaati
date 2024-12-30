@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayane Maati</title>
-    <link href="main.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link href="style/main.css" rel="stylesheet">
 </head>
 <body>
-
     <div class="hero">
         <img class="persoImg" src="imgs/persoImg.jpg">
 
@@ -15,10 +18,17 @@
             Hi! I'm <span class="fullName">Rayane Maati</span>
         </div>
 
-        <div>
-            <div class="occupation"></div><span style="font-size: 20px;" class="cursorLine"> | </span>
+        <div class="heroOcc">
+            <p class="occupation">Software Engineering student @ uOttawa</p><span style="font-size: 20px;" class="cursorLine"> | </span>
         </div>
         <a href="#aboutMe"><button class="moreBtn">KNOW ME BETTER !</button></a>
+    </div>
+
+    <div class="sectionsNav">
+        <button class="navBtn" onclick="window.location.href = '#aboutMe';">Who I Am ?</button>
+        <button class="navBtn" onclick="window.location.href = '#myProgLanguages';">My Skills</button>
+        <button class="navBtn" onclick="window.location.href = '#myProjects';">My Projects</button>
+        <button class="navBtn" onclick="window.location.href = '#myProjects';">Contact Me !</button>
     </div>
 
     <div class="skillsCard aboutMe" id="aboutMe">
@@ -27,40 +37,20 @@
         <div class="ide">
             <div class="ideHeader"><img src="icons/js.svg">Me.js <span class="x">x</span></div>
             <div class="aboutMeContent">
-                <span class="num">1</span>&nbsp;&nbsp;&nbsp;<span style="color: var(--light);">const</span> me = { <br>
-                    <span class="num">2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: var(--light);">name</span>: <span style="color: #f4bb6c;">"Rayane Maati"</span>, <br>
-                    <span class="num">3</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: var(--light);">occupation</span>: <span style="color: #f4bb6c;">"Software Enginnering Student"</span>, <br>
-                    <span class="num">4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: var(--light);">hobby</span>: <span style="color: #f4bb6c;">"Programming"</span>, <br>
-                    <span class="num">5</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: var(--light);">age</span>: <span style="color: #f4bb6c;">"18"</span> <br>
-                    <span class="num">6</span>&nbsp;&nbsp;&nbsp;}
+                <div class="ideLine"><span class="num">1</span>&nbsp;&nbsp;&nbsp;<span style="color: var(--light);">const</span> me = { <br></div>
+                <div class="ideLine"><span class="num">2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: var(--light);">name</span>: <span style="color: #f4bb6c;">"Rayane Maati"</span>, <br></div>
+                <div class="ideLine"><span class="num">3</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: var(--light);">occupation</span>: <span style="color: #f4bb6c;">"Software Enginnering Student"</span>, <br></div>
+                <div class="ideLine"><span class="num">4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: var(--light);">hobby</span>: <span style="color: #f4bb6c;">"Programming"</span>, <br></div>
+                <div class="ideLine"><span class="num">5</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: var(--light);">age</span>: <span style="color: #f4bb6c;">19</span> <br></div>
+                <div class="ideLine"><span class="num">6</span>&nbsp;&nbsp;&nbsp;}</div>
             </div>
 
         </div>
 
     </div>
 
-    <div class="skillsCard">
-        <div class="title">print(mySkills)</div>
-        <div class="cards">
-            <div class="card">
-                <div class="skillTitle">Problem Solving</div>
-                <img src="icons/py.svg" class="icon"/>
-            </div>
-
-            <div class="card">
-                <div class="skillTitle">Attention to detail</div>
-                <img src="icons/loupe.svg" class="icon"/>
-            </div>
-
-            <div class="card">
-                <div class="skillTitle">Problem Solving</div>
-                <img src="icons/py.svg" class="icon"/>
-            </div>
-        </div>
-    </div>
-
-    <div class="langCard skillsCard">
-        <div class="title">return(ProgLang[])</div>
+    <div id="myProgLanguages" class="langCard skillsCard">
+        <div class="title">My Developer's Toolkit</div>
         <div class="cards">
             <div class="card">
                 <div class="langTitle" style="color: var(--x-light)">Python</div>
@@ -100,15 +90,78 @@
         </div>
     </div>
 
+    <div id="mySkills" class="skillsCard">
+        <div class="title">What Makes Me Unique?</div>
+        <div class="cards">
+            <div class="card">
+                <div class="skillTitle">Creative Ideas</div>
+                <img src="icons/creativity.svg" class="icon"/>
+            </div>
+
+            <div class="card">
+                <div class="skillTitle">Attention to detail</div>
+                <img src="icons/loupe.svg" class="icon"/>
+            </div>
+
+            <div class="card">
+                <div class="skillTitle">Problem Solving</div>
+                <img src="icons/puzzle.svg" class="icon"/>
+            </div>
+        </div>
+    </div>
+
+    <div id="myProjects" class="langCard skillsCard">
+        <div class="title">My Projects</div>
+        <div class="cards">
+
+            <div class="projectCard">
+                <div class="projectInfo">
+                    <img src="imgs/quizLogo.png" class="projectIcon"/>
+                    <div>
+                        <div class="previewSection">
+                            <div class="projectTitle" onclick="window.open('https://rayanemaati.github.io/quizByAI/')">QuizByAI</div>
+                            <img class="linkIcon" src="icons/open-link.svg" onclick="window.open('https://rayanemaati.github.io/quizByAI/')"/>
+                        </div>
+                        <div class="technology">HTML, CSS, JS, OPENAI-API</div>
+                    </div>
+                </div>
+                <div class="projectDesc">
+                    QuizByAI is a tool designed to help students prepare for exams by generating AI-powered quizzes based on the topics they want to study.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="mySocials" class="langCard skillsCard">
+        <div class="title">Let's Make great things together!</div>
+        <div class="socials">
+            <div class="socialItem">
+                <img src="icons/cv.svg" alt="resume" onclick="window.open('cv.pdf')">
+                <div>Resume</div>
+            </div>
+
+            <div class="socialItem">
+                <img src="icons/email.svg" alt="email" onclick="window.open('mailto:rmaat066@uottawa.ca')">
+                <div>Email</div>
+            </div>
+
+            <div class="socialItem">
+                <img src="icons/linkedin.svg" alt="linkedin" onclick="window.open('https://www.linkedin.com/in/rayane-maati-36093720b/')">
+                <div>LinkedIn</div>
+            </div>
+
+            <div class="socialItem">
+                <img src="icons/github.svg" alt="github" onclick="window.open('https://github.com/RayaneMaati/')">
+                <div>GitHub</div>
+            </div>
+        </div>
+    </div>
+
     <button class="topBtn" onclick="goUp()"><img src="icons/up.svg"/></button>
 
+    <footer>Made with love by <span style="color: var(--light); font-weight: 600;">Rayane Maati</span></footer>
+   
     <script src="script.js"></script>
 </body>
 </html>
-
-<!-- const me = {
-    name: "Rayane Maati",
-    occupation: "Software Enginnering Student",
-    hobby: "Programming",
-    age: "n/a"
-} -->

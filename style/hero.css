@@ -1,0 +1,84 @@
+.hero, .skillsCard{
+    margin: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: var(--ls-dark);
+    text-align: center;
+    box-shadow: var(--shdow);
+}
+.persoImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: var(--light) solid 4px;
+    box-shadow: var(--shdow);
+}
+.heroTitle{
+    font-weight: 500;
+}
+.fullName{
+    font-weight: bold;
+    color: var(--light);
+}
+.heroOcc{
+    margin-top: -10px;
+}
+.occupation{
+    display: inline;
+    font-size: 20px;
+    line-height: .5;
+    margin-top: -50px;
+}
+.moreBtn{
+    background-color: var(--mid);
+    border-radius: 40px;
+    padding: 15px 50px;
+    font-family: "Poppins";
+    font-size: 20px;
+    border: none;
+    color: var(--x-light);
+    box-shadow: var(--shdow);
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    margin: 20px;
+    cursor: pointer;
+}
+/* .moreBtn:hover{
+    box-shadow: var(--shdow-hover);
+    color: #cbe4de90;
+    transform: translateY(-3px);
+} */
+
+@media only screen and (max-width: 640px) {
+    .heroTitle{
+        font-size: 30px;
+    }
+    .occupation{
+        font-size: 18px;
+    }
+    .cursorLine{
+        font-size: 18px;
+    }
+    .moreBtn{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 446px) {
+    .persoImg{
+        width: 120px;
+        height: 120px;
+    }
+    .heroTitle{
+        font-size: 28px;
+    }
+    .occupation{
+        font-size: 14px;
+    }
+    .cursorLine{
+        font-size: 13px;
+    }
+    .moreBtn{
+        font-size: 16px;
+    }
+}

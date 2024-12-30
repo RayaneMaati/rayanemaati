@@ -1,0 +1,82 @@
+/* SKILLS */
+.skillsCard{
+    margin-top: 30px;
+}
+.skillsCard .title, .langCard .title{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 200px;
+    background-color: var(--ls-dark);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: var(--shdow);
+    margin: 15px;
+    cursor: pointer;
+    transition: all ease-out .3s;
+
+}
+.card:hover{
+    background-color: rgba(255, 255, 255, 0.075);
+    box-shadow: var(--shdow-hover);
+    transform: translateY(-3px);
+}
+.skillTitle, .langTitle{
+    font-size: 25px;
+    color: var(--x-light) !important;
+    font-weight: bold;
+    padding: 15px;
+    text-shadow: rgba(203, 228, 222, 0.05) 2px 2px 2px;
+}
+
+.icon{
+    width: 80px;
+    height: 80px;
+    margin-top: -10px;
+}
+
+@media only screen and (max-width: 640px) {
+    .skillsCard .title{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .skillsCard .title{
+        font-size: 30px;
+    }
+    .card{
+        width: 150px;
+    }
+    .langTitle{
+        font-size: 20px;
+    }
+    .icon{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 436px) {
+    .skillsCard .title{
+        font-size: 28px;
+    }
+    .card{
+        width: 120px;
+    }
+    .langTitle, .skillTitle{
+        font-size: 16px;
+        padding-bottom: 5px !important;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
+}
