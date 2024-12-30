@@ -1,4 +1,4 @@
-console.log("Hi! What are you doing Here ? :)");
+console.log("Hi! What are you doing Here ? :) ?");
 let occupation = document.querySelector(".occupation");
 let cLine = document.querySelector(".cursorLine");
 
